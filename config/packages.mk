@@ -21,10 +21,8 @@ PRODUCT_PACKAGES += \
     AppCompatConfig \
     AppDataBackup
 
-ifeq ($(VOLTAGE_BUILD_TYPE),OFFICIAL)
-    PRODUCT_PACKAGES += \
-        Updater
-endif
+PRODUCT_PACKAGES += \
+    Updater
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
