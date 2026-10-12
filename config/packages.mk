@@ -15,7 +15,6 @@ PRODUCT_PACKAGES += \
     Seedvault \
     Datura \
     ExactCalculator \
-    Glimpse \
     LMOFreeform \
     LMOFreeformSidebar \
     OmniJaws \
@@ -27,10 +26,6 @@ ifeq ($(VOLTAGE_BUILD_TYPE),OFFICIAL)
         Updater
 endif
 
-ifneq ($(PRODUCT_NO_CAMERA),true)
-PRODUCT_PACKAGES += \
-    Aperture
-endif
 
 # BtHelper
 PRODUCT_PACKAGES += \
